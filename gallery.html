@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="row">
+            <div class="column">
+                <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="Himalayas" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <div class="caption">"Majestic view of the Himalayan mountains."</div>
+            </div>
+            <div class="column">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/1200px-Altja_j%C3%B5gi_Lahemaal.jpg" alt="Forest" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                <div class="caption">"Serene forest landscape with lush green trees."</div>
+            </div>
+            <div class="column">
+                <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=" alt="Sunrise" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                <div class="caption">"Breathtaking sunrise over the horizon, painting the sky with vibrant colors."</div>
+            </div>
+        </div>
+
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlbebhPTZCAordX-UR8gYYmQ3p77x3XM_tSP6tTOtFJw&s" style="width:100%" onclick="currentSlide(1)" alt="Great Himalaya">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb" style="width:100%" onclick="currentSlide(2)" alt="Deep Forest">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="https://media.istockphoto.com/id/620951116/photo/panoramic-view-of-colorful-sunrise-in-mountains.jpg?s=612x612&w=0&k=20&c=6IO5LBwLVSBPxQD4L5NlrxRkygeocjA5OKg8iKqvT58=" style="width:100%" onclick="currentSlide(3)" alt="Best Sunrise">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
